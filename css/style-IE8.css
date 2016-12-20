@@ -1,0 +1,835 @@
+.content section:first-child {
+    position: relative;
+    behevior: url(PIE.htc);
+    -pie-background: linear-gradient(#745083, #322539);
+}
+
+.top-wrapper {
+
+    background: url(../img/bg_overlay.jpg);
+}
+
+.bottom-wrapper {
+    background: url(../img/bg-footer.jpg);
+}
+
+.about__wrapper {
+    background:  #322539;
+    -pie-background: linear-gradient(to top, #322539, #745083);
+    behevior: url(PIE.htc);
+}
+
+@font-face {
+    font-family: 'League Gothic Regular';
+    src: url('../fonts/LeagueGothicRegular/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/LeagueGothicRegular/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/LeagueGothicRegular/leaguegothic-regular-webfont.woff2') format('woff2'),
+    url('../fonts/LeagueGothicRegular/leaguegothic-regular-webfont.woff') format('woff'),
+    url('../fonts/LeagueGothicRegular/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/OpenSansLight/OpenSans-Light.eot') format('embedded-opentype');
+    src: url('../fonts/OpenSansLight/OpenSans-Light.svg') format('svg');
+    src: url('../fonts/OpenSansLight/OpenSans-Light.ttf') format('truetype');
+    src: url('../fonts/OpenSansLight/OpenSans-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans Extrabold';
+    src: url('../fonts/OpenSansExtraBold/OpenSans-ExtraBold.eot') format('embedded-opentype');
+    src: url('../fonts/OpenSansExtraBold/OpenSans-ExtraBold.svg') format('svg');
+    src: url('../fonts/OpenSansExtraBold/OpenSans-ExtraBold.ttf') format('truetype');
+    src: url('../fonts/OpenSansExtraBold/OpenSans-ExtraBold.woff') format('woff');
+}
+
+
+* {
+    text-decoration: none;
+}
+
+.top-wrapper {
+    width: 100%;
+    height: 846px;
+
+}
+
+.top, .bottom {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 52px; // 69px;
+    margin-left: -9px;  // 0
+}
+
+.top__nav {
+    position: absolute;
+    display: block;
+    width: 640px;
+    height: 30px;
+    top: 68px;
+    left: 324px;
+}
+
+.top__nav li, .bottom-nav li {
+    display: inline-block;
+    float: left;
+    margin-right: 52px;
+}
+
+.top__nav li:last-child, .bottom-nav li:last-child {
+    display: inline-block;
+    float: left;
+    margin-right: 0;
+}
+
+.top__nav ul li:hover, .bottom-nav ul li:hover {
+    box-shadow: inset 0 -2px 0 0 #edbfff;
+    transition: 0.3s;
+}
+
+.top__nav ul li a, .bottom-nav ul li a {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "League Gothic Regular", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+.main:after {
+    clear: both;
+}
+
+/* -------------------- slider --------------------------------*/
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 278px;
+    width: 100%;
+    height: 400px;
+
+}
+
+.slider__content {
+    position: relative;
+    top: 141px;  //126
+left: -4px;
+    width: 960px;
+    height: 500px;
+}
+
+.slider__content h2 {
+    position: absolute;
+    left: 0;
+    top: 113px;
+    text-transform: capitalize;
+    font-family: "League Gothic Regular", Arial, sans-serif;
+    font-size: 60px;
+    line-height: 36px;
+    font-weight: 400;
+    word-spacing: inherit;
+    letter-spacing: -0.01em;
+    color: #fefefe;
+    z-index: 25;
+}
+
+.slider__content h3 {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    text-transform: uppercase;
+    font-family: "League Gothic Regular", Arial, sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 400;
+    word-spacing: inherit;
+    letter-spacing: -0.003em;
+    color: #edbfff;
+}
+
+.slider__content p {
+    position: absolute;
+    left: 0;
+    top: 200px;
+    width: 510px;
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 300;
+    letter-spacing: -0.005em;
+    color: #fff;
+}
+
+.slider__phone {
+    position: absolute;
+    top: 8px;
+    right: 78px;
+    width: 260px;
+    height: 434px;
+    background: url(../img/phone.png) no-repeat;
+    z-index: 30;
+}
+
+.slider__link {
+    position: absolute;
+    top: 156px;
+    right: 124px;
+    width: 80px;
+    height: 80px;
+    background: url(../img/play.png) no-repeat;
+    z-index: 40;
+}
+
+.slider__link:hover {
+    position: absolute;
+    top: 156px;
+    right: 124px;
+    width: 80px;
+    height: 80px;
+    background: url(../img/play_hover.png) no-repeat;
+    z-index: 40;
+}
+
+.slider__left-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 455px;
+    left: 150px;
+    width: 30px;
+    height: 42px;
+    background: url(../img/slider_arrows.png) 0 0 no-repeat;
+    z-index: 60;
+}
+
+.slider__left-arrow:hover {
+    position: absolute;
+    top: 455px;
+    left: 150px;
+    width: 30px;
+    height: 42px;
+    background: url(../img/slider_arrows.png) 0 -42px no-repeat;
+    z-index: 60;
+}
+
+.slider__right-arrow {
+    position: absolute;
+    top: 455px;
+    right: 150px;
+    width: 30px;
+    height: 42px;
+    background: url(../img/slider_arrows.png) -30px 0 no-repeat;
+    z-index: 60;
+}
+
+.slider__right-arrow:hover {
+    position: absolute;
+    top: 455px;
+    right: 150px;
+    width: 30px;
+    height: 42px;
+    background: url(../img/slider_arrows.png) -30px -42px no-repeat;
+    z-index: 60;
+}
+
+/* ----------------- #about    purple-------------------------- */
+.about__wrapper {
+    width: 100%;
+    height: 341px;
+    border-top: 1px solid #34273b;
+    border-bottom: 1px solid #0d151b;
+    box-shadow: inset 0 -1px 0 0 #1d2f37;
+}
+
+.about {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    background: url(../img/play_hover.png) no-repeat;
+}
+
+.about__art {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 220px;
+    height: 158px;
+    margin-top: 76px;
+    margin-right: 120px;
+}
+
+.about__art-middle {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.about__art-last{
+    margin-left: 117px;
+    margin-right: 0;
+}
+#about-1 {
+    margin-left: 60px;
+}
+
+.about__art h4 {
+    font-family: 'League Gothic Regular', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    /*letter-spacing: -0.009em;*/
+    text-shadow: 1px 1px 0 #0f1518;
+    color: #fff;
+    text-indent: 2px;
+}
+
+#about-1 h4:before {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: -52px;
+    content: url(../img/about_key.png);
+}
+
+#about-2 h4:before {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -54px;
+    content: url(../img/about_2.png);
+}
+
+#about-3 h4:before {
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -52px;
+    content: url(../img/about_3.png);
+}
+
+.about__art p {
+    overflow: hidden;
+    height: 120px;
+    width: 230px;
+    text-indent: 3px;
+    margin-top: 6px;
+    font-stretch: ultra-condensed;
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    font-weight: 300;
+    text-shadow: 1px 1px 0 #0f1518;
+    color: #fff;
+}
+
+.about__art a {
+    display: inline-block;
+    float: right;
+    margin-top: 18px;
+    margin-right: 3px;
+    font-family: 'League Gothic Regular', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-shadow: 1px 1px 0 #0f1518;
+    font-weight: 400;
+    color: #fff;
+}
+.about__art-last a, .about__art-middle a{
+    margin-right: 0;
+}
+
+.about__art a:hover {
+    text-shadow: 1px 1px 15px hsla(360, 100%, 100%, 0.5);
+}
+
+/* --------------  #news   slider updater -----------------------*/
+.news-wrapper {
+    display: block;
+    width: 100%;
+    height: 486px;
+    border-bottom: 1px solid #e6e6e6;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    background: #f9f9f9;
+}
+
+.news-wrapper__container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.news, .updates {
+    display: block;
+    position: relative;
+    float: left;
+    width: 456px;
+}
+.updates{
+    width: 500px;
+}
+
+.news__blog:before {
+    display: block;
+    position: absolute;
+    top: 118px;
+    left: 0px;
+    content: url(../img/blog_foto.png);
+    z-index: 10;
+}
+
+.news__blog {
+    display: block;
+    overflow: hidden;
+    width: 427px;
+    height: 273px;
+    margin-left: 22px;
+    margin-top: 100px;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    background: white;
+}
+
+.news__blog h3 {
+    display: inline-block;
+    float: left;
+    padding-top: 30px;
+    text-indent: -3px;
+    text-transform: uppercase;
+    font-family: 'League Gothic Regular', Tahoma, sans-serif;
+    font-size: 30px;
+    line-height: 24px;
+    /*letter-spacing: 0.01em;*/
+    font-weight: 400;
+    text-shadow: 1px 1px 0 #fff;
+    color: #454545;
+}
+
+.news__blog-h3 {
+    margin-left: 44px;
+}
+
+.brand-color {
+    margin-left: 4px;
+    padding-top: 33px;
+}
+
+.news__blog .brand-color {
+    display: inline-block;
+    color: #edbfff;
+}
+
+.news__blog p {
+    display: block;
+    overflow: hidden;
+    height: 163px;
+    width: 352px;
+    padding: 12px 10px 0 38px;
+    font-family: "Open Sans Light", Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    text-shadow: 1px 1px 0 #fff;
+    color: #454545;
+}
+
+.news__blog p:before {
+    content: '“';
+}
+
+.news__blog p:after {
+    content: '”';
+}
+
+.news:after {
+    content: "";
+    position: absolute;
+    top: 373px;
+    left: 420px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #fff;
+    border-left: 12px solid transparent;
+    z-index: 11;
+}
+
+/* -------------- slider ------------------*/
+.news__blog__slider {
+    display: block;
+    width: 97px;
+    height: 20px;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+
+.news__blog__slider ul {
+    list-style: none;
+}
+
+.news__blog__slider ul li {
+    float: left;
+}
+
+.news__blog__slider ul li a {
+    display: inline-block;
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    border-radius: 12px;
+    border: 2px solid white;
+    box-shadow: 0 0 3px hsla(226, 00%, 80%, 0.5);
+    background: hsla(226, 0%, 100%, 0.7);
+}
+
+.news__blog__slider ul li a:hover {
+    background: linear-gradient(#8a8a8a, #4d4d4d);
+}
+
+/* ---------- updates blog news -----------------*/
+
+.updates h3 {
+    width: 140px;
+    height: 27px;
+    margin-left: 54px;
+    margin-top: 127px;
+    text-transform: uppercase;
+    font-family: 'League Gothic Regular', Tahoma, sans-serif;
+    font-size: 30px;
+    letter-spacing: -0.01em;
+    word-spacing: 0.05em;
+    font-weight: 400;
+    text-shadow: 1px 1px 0 #fff;
+    color: #454545;
+}
+
+.updates__box {
+    width: 440px;
+    height: 54px;
+    margin-left: 56px;
+    margin-top: 17px;
+}
+
+.updates__box-first {
+    margin-top: 20px;
+}
+
+.updates__box-middle {
+    margin-top: 14px;
+    margin-left: 54px;
+}
+.updates__box-last {
+    margin-top: 10px;
+    margin-left: 54px;
+}
+.updates__box img {
+    display: block;
+    float: left;
+}
+
+.updates__box h4, .updates__box p {
+    display: inline-block;
+    overflow: hidden;
+    width: 280px;
+    height: 20px;
+    text-indent: 18px;
+    font-family: 'Open Sans Extrabold_sansbold', Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #454545;
+    letter-spacing: 0.02em;
+}
+
+.updates__box p {
+    width: 380px;
+    margin-top: 0;
+    font-family: "Open Sans Light", Tahoma, sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+}
+.updates__box-first h4{
+    text-indent: 14px;
+}
+
+.updates__box-first p{
+    text-indent: 14px;
+    margin-top: 2px;
+    letter-spacing: -0.01em;
+}
+
+.updates__link {
+    float: right;
+    margin-right: 15px;
+    margin-top: 11px;
+    margin-bottom: 88px;
+    text-transform: uppercase;
+    font-family: 'League Gothic Regular', Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-shadow: 1px 1px 0 #fff;
+    font-weight: 400;
+    color: #454545;
+    letter-spacing: -0.01em;
+
+}
+
+.updates__link:hover {
+    color: black;
+    background: white;
+}
+
+/* ------------------------ #trade-mark --------------------------------------*/
+.tm__wrapper {
+    display: block;
+    width: 100%;
+    height: 119px;
+    border-top: 1px solid #fefefe;
+    border-bottom: 1px solid #fefefe;
+    background: #f9f9f9;
+}
+
+.tm__section {
+    position: relative;
+    width: 960px;
+    height: 119px;
+    margin: 0 auto;
+}
+
+.tm__section > ul li {
+    list-style: none;
+}
+
+.tm__section > ul li a {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.tm1 {
+    top: 20px;
+    left: 92px;
+    width: 74px;
+    height: 70px;
+    background: url(../img/tm_sprite.png) 0 0 no-repeat;
+}
+
+.tm1:hover {
+    top: 20px;
+    left: 92px;
+    width: 74px;
+    height: 70px;
+    background: url(../img/tm_sprite.png) 0 -76px no-repeat;
+}
+
+.tm2 {
+    top: 20px;
+    left: 227px;
+    width: 74px;
+    height: 70px;
+    background: url(../img/tm_sprite.png) -80px 0 no-repeat;
+}
+
+.tm2:hover {
+    top: 20px;
+    left: 227px;
+    width: 74px;
+    height: 70px;
+    background: url(../img/tm_sprite.png) -80px -76px no-repeat;
+}
+
+.tm3 {
+    top: 20px;
+    left: 362px;
+    width: 68px;
+    height: 69px;
+    background: url(../img/tm_sprite.png) -161px 0 no-repeat;
+}
+
+.tm3:hover {
+    top: 20px;
+    left: 362px;
+    width: 68px;
+    height: 69px;
+    background: url(../img/tm_sprite.png) -161px -76px no-repeat;
+}
+
+.tm4 {
+    top: 20px;
+    left: 503px;
+    width: 57px;
+    height: 73px;
+    background: url(../img/tm_sprite.png) -237px 0 no-repeat;
+}
+
+.tm4:hover {
+    top: 20px;
+    left: 503px;
+    width: 57px;
+    height: 73px;
+    background: url(../img/tm_sprite.png) -237px -76px no-repeat;
+}
+
+.tm5 {
+    top: 43px;
+    left: 618px;
+    width: 110px;
+    height: 35px;
+    background: url(../img/tm_sprite.png) -300px -23px no-repeat;
+}
+
+.tm5:hover {
+    top: 43px;
+    left: 618px;
+    width: 110px;
+    height: 35px;
+    background: url(../img/tm_sprite.png) -300px -99px no-repeat;
+}
+
+.tm6 {
+    top: 20px;
+    left: 788px;
+    width: 90px;
+    height: 73px;
+    background: url(../img/tm_sprite.png) -410px 0 no-repeat;
+}
+
+.tm6:hover {
+    top: 20px;
+    left: 788px;
+    width: 90px;
+    height: 73px;
+    background: url(../img/tm_sprite.png) -410px -76px no-repeat;
+}
+
+/* -------------------- comments Pingbuller-news  ---------------------------- */
+.wrapper-comments {
+    width: 100%;
+    height: 396px;
+    background: #ececec;
+}
+
+.comments {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.comments__buller, .comments__recent, .comments__news-a {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: 280px;
+    height: 200px;
+    margin-top: 95px;
+}
+
+.comments__buller, .comments__recent {
+    margin-right: 58px;
+}
+
+.comments__recent p, .comments__news-a p {
+    margin-top: 10px;
+}
+
+.comments__buller h2 {
+    margin-top: -8px;
+    text-transform: uppercase;
+    font-family: "League Gothic Regular", Arial, sans-serif;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    text-shadow: 0 1px 0 #fff;
+    color: #454545;
+}
+
+.comments__buller h2 span {
+    text-transform: uppercase;
+    font-family: "League Gothic Regular", Arial, sans-serif;
+    font-size: 48px;
+    line-height: 34px;
+    text-shadow: 0 1px 0 #fff;
+    font-weight: 400;
+    color: #b9b9b9;
+}
+
+.comments__buller i {
+    padding-top: 50px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 36px;
+    font-style: italic;
+    text-shadow: 1px 1px 0 #fff;
+    color: #c5c5c5;
+}
+
+.comments__recent h2, .comments__news-a h2 {
+    margin-top: 2px;
+    text-transform: uppercase;
+    font-family: "League Gothic Regular", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 400;
+    text-shadow: 1px 1px 0 #fff;
+    color: #454545;
+}
+
+.comments__recent p, .comments__news-a p, .comments__buller p {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: -0.035em;
+    hyphens: auto;
+    text-shadow: 1px 1px 0 #fff;
+    color: #787878;
+}
+
+.comments__news-b, .comments__news-c {
+    display: none;
+}
+
+/* ----------------------- footer ------------------------------------------- */
+.bottom-wrapper {
+    width: 100%;
+    height: 113px;
+
+}
+
+.bottom-nav {
+    display: inline-block;
+    width: 528px;
+    margin-top: 38px;
+}
+
+.bottom-nav li {
+    margin-right: 42px;
+}
+
+.bottom-nav ul li a {
+    font-size: 20px;
+}
+
+.bottom p {
+    display: inline-block;
+    float: right;
+    margin-top: 52px;
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 12px;
+    text-shadow: #000 1px 1px 3px;
+    color: #fff;
+}
+
+.bottom p strong {
+    font-family: "Open Sans Extrabold", Arial, sans-serif;
+    font-weight: bold;
+}
